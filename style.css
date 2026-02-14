@@ -73,7 +73,7 @@ body {
 /* Attempts */
 .game__attempts {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 0.75em;
   margin-bottom: 4.3333333333em;
 }
@@ -102,6 +102,7 @@ body {
   gap: 0.5em;
   justify-content: center;
   margin-bottom: 3.25em;
+  flex-wrap: wrap;
 }
 
 .form-control input[type="text"] {
@@ -201,7 +202,6 @@ body {
   }
 
   .game__attempts,
-  .form-control,
   .buttons {
     flex-wrap: wrap;
   }

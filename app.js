@@ -135,7 +135,7 @@ function handleInput(event) {
       // Re-start the game
       resetGame();
       generateRandomWord();
-    }, 2000);
+    }, 1000);
   }
 }
 
@@ -152,7 +152,7 @@ function resetGame() {
     currentCursor.firstChild.readOnly = true;
   }
 
-  wrongInputs.textContent = "";
+  wrongInputs.textContent = 0;
   triesCounterEl.textContent = 0;
   counterDots.forEach((el) => el.classList.remove("filled-dot"));
   // Reset form

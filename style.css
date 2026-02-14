@@ -1,0 +1,140 @@
+:root {
+  ---purple: #7429c6;
+  --pink: #c951e7;
+  --dark-pink: #672171;
+  --dark-grey: #4a5567;
+  --light-grey: #97a3b6;
+  --dark: #030616;
+  --dark-blue: #161e30;
+  --white: #f2f5f9;
+  --button-shadow-color: #7b248a;
+}
+
+/* Large text = 32px | 2rem */
+/* Medium text = 20px | 1.25rem */
+/* Small text = 12px | 0.75rem  */
+/* Button text = 14px | 0.875rem */
+
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  background: linear-gradient(var(---purple), var(--pink));
+  min-height: 100vh;
+  color: var(--white);
+}
+
+/* Layout */
+.app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: inherit;
+}
+
+/* Container */
+.game {
+  max-width: 21.875em;
+  width: 100%;
+  background-color: var(--dark-blue);
+  border-radius: 0.75em;
+  padding: 1.5em;
+}
+
+/* Title */
+.game__title {
+  margin: 0;
+  color: inherit;
+  background: linear-gradient(var(---purple), var(--pink));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.25em;
+  text-align: center;
+  margin-bottom: 1.2em;
+}
+
+/* Text box */
+.game__text-box {
+  background-color: var(--dark-grey);
+  border-radius: 0.5em;
+  padding: 0.75em;
+  box-shadow: 0 0.25em 0 0 var(--dark);
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.random-word {
+  font-size: 2rem;
+  letter-spacing: 0.5em;
+}
+
+/* Attempts */
+.game__attempts {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75em;
+  margin-bottom: 4.3333333333em;
+}
+
+.game__tries {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.counter-dot {
+  background-color: var(--dark-grey);
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+}
+
+.filled-dot {
+  background-color: var(---purple) !important;
+}
+
+/* Form */
+.form-control {
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+  margin-bottom: 3.25em;
+}
+
+.form-control input[type="text"] {
+  box-sizing: border-box;
+  font-size: 1.25rem;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  border: 2px solid var(--dark-grey);
+  background-color: transparent;
+  color: var(--white);
+  text-transform: lowercase;
+  border-radius: 0.375em;
+}
+
+.form-control input[type="text"]:focus {
+  outline: none;
+  border: 2px solid var(--dark-pink);
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.btn {
+  font-size: 0.875em;
+  border: none;
+  background-color: var(--pink);
+  filter: drop-shadow(0 0.2857142857em 0 var(--button-shadow-color));
+  color: var(--white);
+  padding: 0.75em 2.5em;
+  border-radius: 0.75em;
+}

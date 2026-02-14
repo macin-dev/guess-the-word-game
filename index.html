@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="assets/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Guess The Word Game | devChallenges.io</title>
+  </head>
+  <body>
+    <main class="app">
+      <div class="game">
+        <h1 class="game__title">Word Scramblle</h1>
+
+        <!-- Display word -->
+        <div class="game__text-box">
+          <span class="random-word">reflow</span>
+        </div>
+
+        <div class="game__attempts">
+          <!-- Tries -->
+          <div class="game__tries">
+            <!-- Text counter -->
+            <span>Tries (<span id="tries-counter">3</span>/5):</span>
+
+            <!-- UI counter -->
+            <span class="counter-dot filled-dot"></span>
+            <span class="counter-dot filled-dot"></span>
+            <span class="counter-dot filled-dot"></span>
+            <span class="counter-dot"></span>
+            <span class="counter-dot"></span>
+          </div>
+
+          <!-- Mistakes -->
+          <div class="game__mistakes">
+            <span>Mistakes: </span>
+
+            <!-- Wrong inputs -->
+            <span class="wrong-input">a</span>
+            <span class="wrong-input">e</span>
+            <span class="wrong-input">w</span>
+            <span class="wrong-input">t</span>
+            <span class="wrong-input"></span>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="form">
+          <div class="form-control">
+            <input
+              type="text"
+              minlength="1"
+              maxlength="1"
+              name="letter1"
+              id="letter1"
+            />
+            <input
+              type="text"
+              minlength="1"
+              maxlength="1"
+              name="letter2"
+              id="letter2"
+            />
+            <input
+              type="text"
+              minlength="1"
+              maxlength="1"
+              name="letter3"
+              id="letter3"
+            />
+            <input
+              type="text"
+              minlength="1"
+              maxlength="1"
+              name="letter4"
+              id="letter4"
+            />
+            <input
+              type="text"
+              minlength="1"
+              maxlength="1"
+              name="letter5"
+              id="letter5"
+            />
+            <input
+              type="text"
+              minlength="1"
+              maxlength="1"
+              name="letter5"
+              id="letter6"
+            />
+          </div>
+
+          <!-- Buttons -->
+          <div class="buttons">
+            <button class="btn" type="submit">Random</button>
+            <button class="btn" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

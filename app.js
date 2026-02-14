@@ -109,6 +109,8 @@ function handleInput(event) {
     }
   } else if (letter) {
     // Handle mistakes
+    inputEl.value = "";
+
     triesCounter++;
 
     // Reset game

@@ -31,19 +31,21 @@
 
         <!-- Display word -->
         <div class="game__text-box">
-          <span class="random-word">reflow</span>
+          <span class="random-word">
+            <!-- Text inserted by JS :) -->
+          </span>
         </div>
 
         <div class="game__attempts">
           <!-- Tries -->
           <div class="game__tries">
             <!-- Text counter -->
-            <span>Tries (<span id="tries-counter">3</span>/5):</span>
+            <span>Tries (<span id="tries-counter">0</span>/5):</span>
 
             <!-- UI counter -->
-            <span class="counter-dot filled-dot"></span>
-            <span class="counter-dot filled-dot"></span>
-            <span class="counter-dot filled-dot"></span>
+            <span class="counter-dot"></span>
+            <span class="counter-dot"></span>
+            <span class="counter-dot"></span>
             <span class="counter-dot"></span>
             <span class="counter-dot"></span>
           </div>
@@ -53,10 +55,6 @@
             <span>Mistakes: </span>
 
             <!-- Wrong inputs -->
-            <span class="wrong-input">a</span>
-            <span class="wrong-input">e</span>
-            <span class="wrong-input">w</span>
-            <span class="wrong-input">t</span>
             <span class="wrong-input"></span>
           </div>
         </div>
@@ -64,74 +62,19 @@
         <!-- Form -->
         <form class="form" autocomplete="off">
           <div class="form-control">
-            <div>
-              <input
-                type="text"
-                minlength="1"
-                maxlength="1"
-                name="letter1"
-                id="letter1"
-              />
-            </div>
-
-            <div>
-              <input
-                type="text"
-                minlength="1"
-                maxlength="1"
-                name="letter2"
-                id="letter2"
-              />
-            </div>
-
-            <div>
-              <input
-                type="text"
-                minlength="1"
-                maxlength="1"
-                name="letter3"
-                id="letter3"
-              />
-            </div>
-
-            <div>
-              <input
-                type="text"
-                minlength="1"
-                maxlength="1"
-                name="letter4"
-                id="letter4"
-              />
-            </div>
-
-            <div>
-              <input
-                type="text"
-                minlength="1"
-                maxlength="1"
-                name="letter5"
-                id="letter5"
-              />
-            </div>
-
-            <div>
-              <input
-                type="text"
-                minlength="1"
-                maxlength="1"
-                name="letter5"
-                id="letter6"
-              />
-            </div>
+            <!-- inputs elements inserted by JS :) -->
           </div>
 
           <!-- Buttons -->
           <div class="buttons">
-            <button class="btn" type="submit">Random</button>
-            <button class="btn" type="reset">Reset</button>
+            <button class="btn" type="submit" id="randomButton">Random</button>
+            <button class="btn" type="reset" id="clearBtn">Reset</button>
           </div>
         </form>
       </div>
     </main>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
   </body>
 </html>

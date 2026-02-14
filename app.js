@@ -1,9 +1,11 @@
+import wordsList from "./data/words.js";
+
 const inputContainer = document.querySelector(".form-control");
 const wrongInputs = document.querySelector(".wrong-input");
 const triesCounterEl = document.getElementById("tries-counter");
 const counterDots = document.querySelectorAll(".counter-dot");
 
-const words = ["coding", "javascript", "modules", "promises", "function"];
+const words = wordsList;
 let currentWord = "";
 let currentIndexWord = 0;
 let triesCounter = 0;

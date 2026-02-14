@@ -118,6 +118,21 @@ function handleInput(event) {
     counterDots[triesCounter - 1].classList.add("filled-dot");
     triesCounterEl.textContent = triesCounter;
   }
+
+  if (currentIndexWord === currentWord.length) {
+    // Display a success message
+    const modalEl = document.querySelector(".modal");
+    const defaultTop = modalEl.getBoundingClientRect().top;
+    modalEl.style.top = 10 + "%";
+
+    setTimeout(() => {
+      modalEl.style.top = defaultTop + "px";
+
+      // Re-start the game
+      resetGame();
+      generateRandomWord();
+    }, 2000);
+  }
 }
 
 // Handle game reset button
@@ -128,8 +143,11 @@ function resetGame() {
   mistakes = [];
   // Clean HTML
   const currentCursor = document.querySelector(".blinking__text-cursor");
-  currentCursor.classList.remove("blinking__text-cursor");
-  currentCursor.firstChild.readOnly = true;
+  if (currentCursor) {
+    currentCursor.classList.remove("blinking__text-cursor");
+    currentCursor.firstChild.readOnly = true;
+  }
+
   wrongInputs.textContent = "";
   triesCounterEl.textContent = 0;
   counterDots.forEach((el) => el.classList.remove("filled-dot"));

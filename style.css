@@ -172,6 +172,27 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* Winner modal */
+.modal {
+  max-width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #161e30ad;
+  border-radius: 0.5em;
+  position: absolute;
+  top: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 3em;
+  transition: top 0.3s ease-in;
+}
+
+.game-message {
+  font-size: 1rem;
+}
+
 /* Media Queries */
 @media screen and (max-width: 430px) {
   .app {
